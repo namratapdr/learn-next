@@ -22,7 +22,7 @@ const Navbar = () =>  {
         <nav className={`${styles.navbar} w-full h-20 bg-white dark:bg-black `}>
             <div className={`${styles.uNavOptions} flex flex-row justify-between items-center w-full h-full`}>
                 <Logo></Logo>
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center hide-xs hide-sm">
                     {
                         navOptions.map((link: NavigationOption) =>
                             <Link key={link.title}

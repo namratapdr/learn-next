@@ -18,15 +18,11 @@ body {
 }
 
 body * {
-  @apply transition-colors duration-200;
+  @apply transition-colors duration-100;
 }
 
 a {
   text-decoration: none;
-  cursor: pointer;
-}
-
-a {
   cursor: pointer;
 }
 
@@ -56,4 +52,38 @@ a {
   @apply w-screen max-w-1080 md:max-w-full xl:w-1080;
 }
 
+.nxt-layout {
+  p {
+    @apply py-2 text-justify px-4 md:px-2;
+  }
+}
 
+.hide-xs {
+  @media screen and (max-width: 599px) {
+    display: none;
+  }
+}
+
+.hide-sm {
+  @media screen and (min-width: 599px) and (max-width: 959px) {
+    display: none;
+  }
+}
+
+.hide-md {
+  @media screen and (min-width: 959px) and (max-width: 1279px) {
+    display: none;
+  }
+}
+
+.hide-lg {
+  @media screen and (min-width: 1279px) and (max-width: 1919px) {
+    display: none;
+  }
+}
+
+.hide-xl {
+  @media screen and (min-width: 1919px) and (max-width: 5000px) {
+    display: none;
+  }
+}
