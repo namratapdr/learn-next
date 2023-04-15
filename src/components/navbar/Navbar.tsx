@@ -16,15 +16,18 @@ const Navbar = () =>  {
         <nav className={`${styles.navbar} w-full h-20 bg-white dark:bg-black `}>
             <div className={`${styles.uNavOptions} flex flex-row justify-between items-center w-full h-full`}>
                 <Logo></Logo>
-                {
-                    navOptions.map((link: NavigationOption) =>
-                        <Link key={link.title}
-                              href={link.route}
-                              className={`${styles.uNavbarOption} uppercase dark:text-white`} >
-                            {link.title}
-                        </Link>
-                    )
-                }
+                <div className="flex justify-between items-center">
+                    {
+                        navOptions.map((link: NavigationOption) =>
+                            <Link key={link.title}
+                                  href={link.route}
+                                  className={`${styles.uNavbarOption}  dark:text-white px-6`} >
+                                {link.title}
+                            </Link>
+                        )
+                    }
+                </div>
+
                 <button onClick={() => setTheme(theme === 'light'? 'dark': 'light')}>
                     {
                         theme === 'dark' ?

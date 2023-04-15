@@ -13,6 +13,14 @@ module.exports = {
       fontFamily: {
         mont: ['var(--font-mont)', ...fontFamily.sans],
       },
+      width: {
+        '1080': '1080px',
+        '1390': '1390px'
+      },
+      maxWidth: {
+        '1080': '1080px',
+        '1390': '1390px'
+      },
       colors: {
         dark: "#1b1b1b",
         light: "#f5f5f5",

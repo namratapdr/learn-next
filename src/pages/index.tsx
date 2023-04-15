@@ -1,8 +1,9 @@
+import ColorHoverButton from "@component/components/buttons/ColorHoverButton";
 
 export default function Home() {
   return (
     <main>
-      Hello World
+        <ColorHoverButton></ColorHoverButton>
     </main>
   )
 }
