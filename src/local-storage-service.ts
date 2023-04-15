@@ -7,11 +7,11 @@ export class LocalStorageService {
     constructor() { }
 
     public static store(key: string, value: string): void {
-        localStorage.setItem(key, value);
+        window.localStorage.setItem(key, value);
     }
 
     public static retrieve(key: string): string {
-        const value: string | null = localStorage.getItem(key);
+        const value: string | null = window.localStorage.getItem(key);
         return (value === null) ? '' : value;
     }
 
@@ -21,11 +21,11 @@ export class LocalStorageService {
     }
 
     public static clear(): void {
-        localStorage.clear();
+        window.localStorage.clear();
     }
 
     public static removeItems(keys: string[]) {
-        keys.forEach((key: string, index: number) => localStorage.removeItem(key));
+        keys.forEach((key: string, index: number) => window.localStorage.removeItem(key));
     }
 
     public static storeOnAuthSuccessRoute(route: string): void {

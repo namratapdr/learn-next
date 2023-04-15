@@ -3,6 +3,12 @@ import {RequestMapperService} from "@component/request-mapper-service";
 
 export class NavigationOptions {
 
+    public static readonly _home: NavigationOption = {
+        title: 'Home',
+        route: RequestMapperService.BASE_RELATIVE_URL,
+        selected: false
+    };
+
     public static readonly _what: NavigationOption = {
         title: 'About',
         route: RequestMapperService.WHAT_IS_THIS_URL,
@@ -23,6 +29,7 @@ export class NavigationOptions {
 
 
     private static readonly _options: NavigationOption[] = [
+        NavigationOptions._home,
         NavigationOptions._what,
         NavigationOptions._who,
         NavigationOptions._contact

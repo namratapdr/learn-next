@@ -10,7 +10,6 @@ const montserrat: NextFontWithVariable = Montserrat({
   variable: '--font-mont'
 })
 
-
 export default function App({Component, pageProps}: AppProps) {
     return (
         <>

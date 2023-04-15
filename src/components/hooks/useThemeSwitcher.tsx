@@ -1,16 +1,19 @@
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {LocalStorageService} from "@component/local-storage-service";
-const useThemeSwitcher = () => {
-    const preferredTheme: string = "(prefer-color-scheme: light)";
+import {DarkModeState, SetDarkModeState} from "@component/components/hooks/interface/dark-mode-state";
 
-    const [ theme, setTheme ] = useState("");
+const useThemeSwitcher: () => readonly [DarkModeState, SetDarkModeState] = () => {
+    const preferredTheme: string = "(prefer-color-scheme: dark)";
+
+    const [ theme, setTheme ] = React.useState<DarkModeState>('dark');
+
 
     useEffect(()=> {
         const mediaQuery: MediaQueryList = window.matchMedia(preferredTheme);
         const userPref = LocalStorageService.retrieve('theme');
 
         const handleChange = () => {
-            let check: string = '';
+            let check: DarkModeState = 'dark';
             if(userPref) {
                 check = userPref === 'dark' ? 'dark' : 'light';
                 setTheme(check);
