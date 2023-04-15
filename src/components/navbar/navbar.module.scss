@@ -1,5 +1,4 @@
 .navbar {
-  background: white;
   @apply px-10;
 }
 
@@ -31,7 +30,7 @@
 }
 
 .uNavbarOption {
-  @apply text-sm;
+  @apply text-sm dark:text-white;
   @media screen and (min-width: 1120px ) {
     @apply text-base;
   }
