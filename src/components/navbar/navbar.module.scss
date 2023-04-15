@@ -1,0 +1,42 @@
+.navbar {
+  background: white;
+  @apply px-6;
+}
+
+.u-crop {
+  height: 67px;
+  margin-top: 20px;
+  //margin: 20px 0 10px 0.8vw;
+}
+
+.uNavOptions {
+
+  //margin-left: 5vw;
+  position: relative;
+
+  .u-no-selected {
+    border-bottom: 1.5px solid #7F7F7F;
+  }
+
+  .u-nav-icons {
+    margin-right: 20px;
+    //top: -10px;
+    position: relative;
+    top: -2px;
+    .u-sm-icon {
+      max-width: 35px;
+      @apply mx-1;
+    }
+  }
+}
+
+.uNavbarOption {
+  @apply text-sm;
+  @media screen and (min-width: 1120px ) {
+    @apply text-base;
+  }
+  @media screen and (min-width: 1305px ) {
+    @apply text-lg;
+  }
+  border-bottom: 1.5px solid transparent;
+}

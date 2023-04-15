@@ -6,8 +6,23 @@
 
 //$color-primary: #a7b6db;
 
+html, body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
 }
 
 .primary-background {

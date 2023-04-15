@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import { Montserrat } from 'next/font/google';
 import Head from "next/head";
 import {NextFontWithVariable} from "next/dist/compiled/@next/font";
-import Navbar from "@component/components/navbar";
+import Navbar from "@component/components/navbar/navbar";
 
 const montserrat: NextFontWithVariable = Montserrat({
   subsets: ['latin'] ,
