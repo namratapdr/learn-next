@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "varaiables.module";
+
+//$color-primary: #a7b6db;
+
+body {
+  box-sizing: border-box;
+}
+
+.primary-background {
+  background: $color-primary;
+}
