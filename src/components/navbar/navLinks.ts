@@ -5,13 +5,13 @@ export class NavigationOptions {
 
     public static readonly _home: NavigationOption = {
         title: 'Home',
-        route: RequestMapperService.BASE_RELATIVE_URL,
+        route: RequestMapperService.ROOT_URL,
         selected: false
     };
 
     public static readonly _what: NavigationOption = {
         title: 'About',
-        route: RequestMapperService.WHAT_IS_THIS_URL,
+        route: RequestMapperService.ABOUT_URL,
         selected: false
     };
 

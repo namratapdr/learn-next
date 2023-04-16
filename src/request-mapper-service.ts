@@ -4,7 +4,7 @@ export class RequestMapperService {
     public static readonly ROOT_URL: string = '/';
 
     public static readonly PRODUCT_URL: string = 'product';
-    public static readonly ABOUT_URL: string = 'about';
+    public static readonly ABOUT_URL: string = 'about-us';
     public static readonly HOW_TO_GET_IN_URL: string = 'how-to-get-in';
     public static readonly WHO_PLAYS_IT_URL: string = 'who-plays-it';
     public static readonly WHAT_IS_THIS_URL: string = 'what-is-this';
